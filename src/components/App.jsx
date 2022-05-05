@@ -1,16 +1,16 @@
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import AppBar from "./AppBar";
+import Container from "./Container";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <AppBar />
+      <Routes>
+        {/* <Route path="/" element={<HomeView />} />
+        <Route path="/authors/*" element={<AuthorsView />} /> */}
+        </Routes>
+   </Container>
   );
 };

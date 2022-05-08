@@ -1,0 +1,10 @@
+.link {
+    display: inline-block;
+        transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.link:hover,
+.link:focus {
+    color: green;
+}
+

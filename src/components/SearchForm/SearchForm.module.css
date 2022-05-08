@@ -1,0 +1,19 @@
+.SearchForm {
+     margin-top: 20px;
+     text-align: center;
+}
+
+.input {
+    text-align: center;
+    min-width: 150px;
+    height: 40px;
+}
+
+.button {
+    height: 46px;
+    cursor: pointer;
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.button:hover {
+    background-color: #ffa812;
+}

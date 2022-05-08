@@ -7,7 +7,7 @@ const HomePageView = lazy(()=> import('../views/HomePageView'))
 const MovieDetailsPage = lazy(()=> import('../views/MovieDetailsPage'))
 const Cast = lazy(()=> import('../components/Cast/Cast'))
 const Reviews = lazy(()=> import('../components/Reviews/Reviews'))
-const Spinner = lazy(()=> import('../components/Spinner/Spinner'))
+// const Spinner = lazy(()=> import('../components/Spinner/Spinner'))
 
 
 export const App = () => {
@@ -15,7 +15,7 @@ export const App = () => {
     <>
     <AppBar />
       <Container>
-        <Suspense fallback={<Spinner/>}>
+        <Suspense fallback={<h2>Loading...</h2>}>
       <Routes>
         <Route path="/" element={<HomePageView/> }/>
         <Route path='/movies' element={<MoviesPageView />} />
